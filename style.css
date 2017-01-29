@@ -13,9 +13,13 @@ body{
 	background-color:white;
 	color:#00B7B5;
 	font-family: 'Montserrat', sans-serif;
+	margin:5px;
+	border-radius:10px;
 }
 #links span{
 	background-color:#F95759;
 	color:white;
 	font-family: 'Montserrat', sans-serif;
+	margin:5px;
+	border-radius:10px;
 }
