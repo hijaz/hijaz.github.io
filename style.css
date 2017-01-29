@@ -7,13 +7,16 @@ body{
 	margin:0px;
 	padding:0px;
 }
+h1{
+	padding:10px;
+}
 #cards span{
 	background-color:#00265D;
 	font-family: 'Montserrat', sans-serif;
 }
 #tags{
-    background-color: #00265D;
-    padding: 10px;
+    	background-color: #00265D;
+    	padding: 10px;
 }
 #tags span{
 	color:white;
@@ -21,8 +24,8 @@ body{
 	padding:5px;
 }
 #links{
-    background-color: #F95759;
-    padding: 10px;
+    	background-color: #F95759;
+    	padding: 10px;
 }
 #links span{
 	color:white;
