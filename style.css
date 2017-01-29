@@ -10,6 +10,7 @@ body{
 h1{
 	padding:10px;
 	background-color:#193441;
+	margin-bottom:0px;
 }
 #cards span{
 	background-color:#193441;
