@@ -16,11 +16,9 @@ body{
     padding: 10px;
 }
 #tags span{
-	background-color:white;
-	color:#00B7B5;
+	color:white;
 	font-family: 'Montserrat', sans-serif;
 	padding:5px;
-	border-radius:10px;
 }
 #links{
     background-color: white;
