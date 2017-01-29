@@ -5,11 +5,17 @@ body{
 	color:white;
 	font-family: 'Source Code Pro', monospace;
 }
-.card{
+#cards span{
 	background-color:#00265D;
 	font-family: 'Montserrat', sans-serif;
 }
-.tag{
+#tags span{
 	background-color:white;
 	color:#00B7B5;
+	font-family: 'Montserrat', sans-serif;
+}
+#links span{
+	background-color:white;
+	color:#00B7B5;
+	font-family: 'Montserrat', sans-serif;
 }
