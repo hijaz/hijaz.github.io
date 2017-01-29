@@ -21,13 +21,11 @@ body{
 	padding:5px;
 }
 #links{
-    background-color: white;
+    background-color: #F95759;
     padding: 10px;
 }
 #links span{
-	background-color:#F95759;
 	color:white;
 	font-family: 'Montserrat', sans-serif;
 	padding:5px;
-	border-radius:10px;
 }
