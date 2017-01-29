@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Code+Pro');
 
 body{
-	background-color:#00B7B5;
-	color:white;
+	background-color:#202020;
+	color:#FCFFFS;
 	font-family: 'Source Code Pro', monospace;
 	margin:0px;
 	padding:0px;
 }
 h1{
 	padding:10px;
+	background-color:#193441;
 }
 #cards span{
-	background-color:#00265D;
+	background-color:#91AA9D;
 	font-family: 'Montserrat', sans-serif;
 }
 #tags{
@@ -19,16 +20,14 @@ h1{
     	padding: 10px;
 }
 #tags span{
-	color:white;
 	font-family: 'Montserrat', sans-serif;
 	padding:5px;
 }
 #links{
-    	background-color: #F95759;
+    	background-color: #3E606F;
     	padding: 10px;
 }
 #links span{
-	color:white;
 	font-family: 'Montserrat', sans-serif;
 	padding:5px;
 }
