@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Code+Pro');
 
 body{
 	background-color:#00B7B5;
@@ -7,4 +7,9 @@ body{
 }
 .card{
 	background-color:#00265D;
+	font-family: 'Montserrat', sans-serif;
+}
+.tag{
+	background-color:white;
+	color:#00B7B5;
 }
