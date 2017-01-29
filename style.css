@@ -4,6 +4,8 @@ body{
 	background-color:#00B7B5;
 	color:white;
 	font-family: 'Source Code Pro', monospace;
+	margin:0px;
+	padding:0px;
 }
 #cards span{
 	background-color:#00265D;
@@ -12,7 +14,6 @@ body{
 #tags{
     background-color: #00265D;
     padding: 10px;
-    margin: 10px;
 }
 #tags span{
 	background-color:white;
@@ -24,7 +25,6 @@ body{
 #links{
     background-color: white;
     padding: 10px;
-    margin: 10px;
 }
 #links span{
 	background-color:#F95759;
