@@ -9,12 +9,22 @@ body{
 	background-color:#00265D;
 	font-family: 'Montserrat', sans-serif;
 }
+#tags{
+    background-color: #F95759;
+    padding: 10px;
+    margin: 10px;
+}
 #tags span{
 	background-color:white;
 	color:#00B7B5;
 	font-family: 'Montserrat', sans-serif;
 	padding:5px;
 	border-radius:10px;
+}
+#links{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
 }
 #links span{
 	background-color:#F95759;
