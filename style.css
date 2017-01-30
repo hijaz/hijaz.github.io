@@ -11,10 +11,12 @@ h1{
 	padding:10px;
 	background-color:#193441;
 	margin-bottom:0px;
+	padding-left:15px;
 }
 #cards span{
 	background-color:#193441;
 	font-family: 'Montserrat', sans-serif;
+	padding:15px;
 }
 #tags{
     	background-color: #91AA9D;
