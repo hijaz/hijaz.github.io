@@ -32,3 +32,8 @@ h1{
 	font-family: 'Montserrat', sans-serif;
 	padding:5px;
 }
+.top_shadow{
+	-webkit-box-shadow: inset 0px 10px 14px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 10px 14px -6px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 10px 14px -6px rgba(0,0,0,0.75);
+}
