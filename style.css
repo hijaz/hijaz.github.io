@@ -23,6 +23,10 @@ h1{
 	margin-left: 15px;
     	position: relative;
     	top: 34px;
+	background-image: url(http://placehold.it/350x150);
+   	min-width: 200px;
+    	height: 200px;
+    	display: inline-block;
 }
 #tags{
     	background-color: #91AA9D;
