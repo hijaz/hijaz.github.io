@@ -17,6 +17,9 @@ h1{
 	background-color:#193441;
 	font-family: 'Montserrat', sans-serif;
 	padding:15px;
+	margin-left: 15px;
+    	position: relative;
+    	top: 34px;
 }
 #tags{
     	background-color: #91AA9D;
