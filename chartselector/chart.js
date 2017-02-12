@@ -1,4 +1,6 @@
-r Chart',
+[
+{
+  'id':'Bar Chart',
   'atype':['Comparison']
 },
 {'id':'Column Chart',
@@ -140,4 +142,3 @@ r Chart',
   'atype':['Relationship/Correlation']
 }
 ]
-
