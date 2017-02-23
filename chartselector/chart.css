@@ -5,7 +5,11 @@ body{
 }
 #header{
   background-color: #5712dd;
-	color: white;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -7px;
+  font-size: 75px;
+  margin-left: 15px;
 }
 h1{
   font-family: 'Montserrat', sans-serif;
@@ -14,10 +18,10 @@ h1{
   margin-left: 15px;
 }
 #options span{
-    display: inline-block;
-    margin: 10px;
-    background-color: #5712dd;
-    color: white;
-    padding: 20px;
-    border-radius: 40px;
+  display: inline-block;
+  margin: 10px;
+  background-color: #5712dd;
+  color: white;
+  padding: 20px;
+  border-radius: 40px;
 }
