@@ -18,7 +18,7 @@ h1{
   font-size: 75px;
   margin-left: 15px;
 }
-#options span{
+.options span{
   display: inline-block;
   margin: 10px;
   background-color: #5712dd;
