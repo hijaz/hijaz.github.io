@@ -3,6 +3,10 @@ body{
   color: #5712dd;
   font-family: 'Open Sans', sans-serif;
 }
+#header{
+  background-color: #5712dd;
+	color: white;
+}
 h1{
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -7px;
