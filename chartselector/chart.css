@@ -35,6 +35,11 @@ h1{
   background-color: #5712dd;
   color: white;
 }
+.selected span:hover{
+  background-color: white !important;
+  color: #5712dd !important;
+  cursor: default !important;
+}
 .options span.selected{
   background-color: #5712dd;
   color: white;
