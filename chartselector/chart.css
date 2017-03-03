@@ -55,3 +55,8 @@ body > div{
 .alwvis{
   display:block !important;
 }
+#reset{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
