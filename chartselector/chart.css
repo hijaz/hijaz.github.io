@@ -28,7 +28,7 @@ h1{
   border-radius: 40px;
   font-size: 20px;
 }
-div{
+body > div{
   display:none;
 }
 .alwvis{
