@@ -9,12 +9,12 @@ $(document).ready(function(){
       $('#'+id).show();
       setTimeout(function (){
         scrollToThis(id);
-      }, 1000);
+      }, 500);
     }
   });
 });
 var scrollToThis = function(id){
     $('html, body').animate({
         scrollTop: $("#"+id).offset().top
-    }, 2000);
+    }, 100);
 };
