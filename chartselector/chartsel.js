@@ -1,5 +1,11 @@
 $(document).ready(function(){
   $('span').click(function(){
-    $(this).addClass('selected').parent().addClass('selected');
+    var $this = $(this);
+    var $parent = $this.parent();
+    if(!$parent.hasClass('selected')){
+      $parent.addClass('selected')
+      $this.addClass('selected');
+      console.log($this.attr('data-option'));
+    }
   });
 });
