@@ -35,6 +35,10 @@ h1{
   background-color: #5712dd;
   color: white;
 }
+.options span.selected{
+  background-color: #5712dd;
+  color: white;
+}
 body > div{
   display:none;
 }
