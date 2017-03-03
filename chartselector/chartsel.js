@@ -14,5 +14,5 @@ $(document).ready(function(){
 var scrollToThis = function(id){
     $('html, body').animate({
         scrollTop: $("#"+id).offset().top
-    }, 4000);
+    }, 3000);
 };
