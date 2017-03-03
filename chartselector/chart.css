@@ -28,3 +28,9 @@ h1{
   border-radius: 40px;
   font-size: 20px;
 }
+div{
+  display:none;
+}
+alwvis{
+  display:block;
+}
