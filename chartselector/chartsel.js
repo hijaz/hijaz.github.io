@@ -7,12 +7,14 @@ $(document).ready(function(){
       $this.addClass('selected');
       var id = $this.attr('data-option');
       $('#'+id).show();
-      scrollToThis(id);
+      setTimeout(function (){
+        scrollToThis(id);
+      }, 1000);
     }
   });
 });
 var scrollToThis = function(id){
     $('html, body').animate({
         scrollTop: $("#"+id).offset().top
-    }, 3000);
+    }, 2000);
 };
