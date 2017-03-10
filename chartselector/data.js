@@ -8,7 +8,7 @@
           "q":"Relative or absolute composition?",
           "o":[
             "Relative":{
-              "q":"Continuous or discrete data?"
+              "q":"Continuous or discrete data?",
               "o":[
                 "Continuous":{
                   "q":"Use a <a href='https://www.google.com/search?q=Stacked+100%25+area+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjjt8ybzbnSAhUIiVQKHUlmAzAQ_AUICCgB&amp;biw=1440&amp;bih=803'>Stacked 100% Area Chart</a>"
@@ -18,7 +18,17 @@
                 }
               ]
             },
-            "Absolute":{}
+            "Absolute":{
+             "q":"Continuous or discrete data?",
+              "o":[
+                "Continuous":{
+                  "q":"Use a <a href='https://www.google.com/search?q=Stacked+100%25+area+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjjt8ybzbnSAhUIiVQKHUlmAzAQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=stacked+area+chart&amp;*'>Stacked Area Chart</a>"
+                },
+                "Discrete":{
+                  "q":"Use a <a href='https://www.google.com/search?q=Stacked+100%25+area+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjjt8ybzbnSAhUIiVQKHUlmAzAQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=Stacked+Column+Chart&amp;*'>Stacked Column Chart</a>"
+                }
+              ]
+            }
           ]
         },
         "No":{}
