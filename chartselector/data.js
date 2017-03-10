@@ -13,7 +13,9 @@
                 "Continuous":{
                   "q":"Use a <a href='https://www.google.com/search?q=Stacked+100%25+area+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjjt8ybzbnSAhUIiVQKHUlmAzAQ_AUICCgB&amp;biw=1440&amp;bih=803'>Stacked 100% Area Chart</a>"
                 },
-                "Discrete":{}
+                "Discrete":{
+                  "q":"Use a <a href='https://www.google.com/search?q=Stacked+100%25+area+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjjt8ybzbnSAhUIiVQKHUlmAzAQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=Stacked+100%25+Column+Chart&amp;*'>Stacked 100% Column Chart</a>"
+                }
               ]
             },
             "Absolute":{}
