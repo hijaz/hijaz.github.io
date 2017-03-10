@@ -81,7 +81,25 @@
             }
           ]
         },
-        "No":{}
+        "No":{
+          "q":"Categories to compare",
+          "o":[
+            "Few":{
+              "q":"Number of variables",
+              "o":[
+                "One":{
+                  "q":"Use a <a href='https://www.google.com/search?q=bar+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwiAgd2R_sXSAhVGSiYKHcUBAU0Q_AUICCgB&amp;biw=1440&amp;bih=803'>Bar Chart</a>"
+                },
+                "Two":{
+                  "q":"Use a <a href='https://www.google.com/search?q=bar+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwiAgd2R_sXSAhVGSiYKHcUBAU0Q_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=variable+width+bar+chart&amp;*'>Variable width bar chart</a>"
+                }
+              ]
+            },
+            "Many":{
+              "q":"Use <a href='https://www.google.com/search?q=circular+line+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwiEsPvY_8XSAhWB0iYKHVSMAjQQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=ggplot+facets&amp;*'>facets</a>"
+            }
+          ]  
+        }
       ]
     },
     "Distribution":{},
