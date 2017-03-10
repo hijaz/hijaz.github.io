@@ -68,7 +68,17 @@
                 }
               ]
             },
-            "Continuous":{}
+            "Continuous":{
+              "q":"Cyclical time?",
+              "o":[
+                "Cyclical":{
+                  "q":"Use a <a href='https://www.google.com/search?q=circular+line+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwiEsPvY_8XSAhWB0iYKHVSMAjQQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=circular+area+chart&amp;*'>Circular Area Chart</a>"
+                },
+                "Linear":{
+                  "q":"Use a <a href='https://www.google.com/search?q=circular+line+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwiEsPvY_8XSAhWB0iYKHVSMAjQQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=line+chart&amp;*'>Line Chart</a>"
+                }
+              ]
+            }
           ]
         },
         "No":{}
