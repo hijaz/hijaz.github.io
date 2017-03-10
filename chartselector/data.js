@@ -51,7 +51,29 @@
       ]
     },
     "Relationship":{},
-    "Comparison":{},
+    "Comparison":{
+      "q":"Visualize change over time?"
+      "o":[
+        "Yes":{
+          "q":"Discrete or Continuous?",
+          "o":[
+            "Discrete":{
+              "q":"Number of variables?",
+              "o":[
+                "One":{
+                  "q":"Use a <a href='https://www.google.com/search?q=bar+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwiAgd2R_sXSAhVGSiYKHcUBAU0Q_AUICCgB&amp;biw=1440&amp;bih=803'>Bar Chart</a>"
+                },
+                "Two":{
+                  "q":"Use a <a href='https://www.google.com/search?q=bar+chart&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwiAgd2R_sXSAhVGSiYKHcUBAU0Q_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=variable+width+bar+chart&amp;*'>Variable width bar chart</a>"
+                }
+              ]
+            },
+            "Continuous":{}
+          ]
+        },
+        "No":{}
+      ]
+    },
     "Distribution":{},
     "Ranking":{},
     "Progress":{},
