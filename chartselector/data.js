@@ -52,7 +52,7 @@
     },
     "Relationship":{},
     "Comparison":{
-      "q":"Visualize change over time?"
+      "q":"Visualize change over time?",
       "o":[
         "Yes":{
           "q":"Discrete or Continuous?",
