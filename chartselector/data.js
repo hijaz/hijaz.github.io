@@ -31,7 +31,23 @@
             }
           ]
         },
-        "No":{}
+        "No":{
+          "q":"Choose one:",
+          "o":[
+            "Heirarchy":{
+              "q":"Use a <a href='https://www.google.com/search?q=tree+map&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwip757g1LnSAhWIqlQKHepAA_UQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=treemap&amp;*'>Tree Map</a> or a <a href='https://www.google.com/search?q=tree+map&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwip757g1LnSAhWIqlQKHepAA_UQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=Heirarchial+Dendogram&amp;*'>Heirarchial Dendogram</a>"
+            },
+            "Accumulation/Reduction to a fixed value":{
+              "q":"Use a <a href='https://www.google.com/search?q=tree+map&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwip757g1LnSAhWIqlQKHepAA_UQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=waterfall+chart&amp;*'>Waterfall Chart</a>"
+            },
+            "Show a population":{
+              "q":"Use a <a href='https://www.google.com/search?q=tree+map&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwip757g1LnSAhWIqlQKHepAA_UQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=Population+pyramid&amp;*'>Population pyramid</a>"
+            },
+            "Simple state of the total":{
+              "q":"Use a <a href='https://www.google.com/search?q=tree+map&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwip757g1LnSAhWIqlQKHepAA_UQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=pie+chart&amp;*'>Pie Chart</a> or a <a href='https://www.google.com/search?q=tree+map&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwip757g1LnSAhWIqlQKHepAA_UQ_AUICCgB&amp;biw=1440&amp;bih=803#tbm=isch&amp;q=waffle+chart&amp;*'>Waffle Chart</a>"
+            }
+          ] 
+        }
       ]
     },
     "Relationship":{},
