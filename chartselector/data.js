@@ -213,7 +213,15 @@
         }  
       }  
     },
-    "Ranking":{},
+    "Ranking":{
+      "q":"Choose one",
+      "o":{
+        "Ordered bar chart":{},
+        "Slope chart":{},
+        "Lollipop chart":{},
+        "Dumbell plot":{}  
+      }  
+    },
     "Progress":{
       "q":"Choose one:",
       "o":{
@@ -228,6 +236,14 @@
         }  
       }  
     },
-    "Deviation":{}
+    "Deviation":{
+      "q":"Choose one:",
+      "o":{
+        "Diverging bars":{},
+        "Diverging lollipop chart":{},
+        "Diverging dot plot":{},
+        "Area Chart":{}  
+      }  
+    }
   }
 }
