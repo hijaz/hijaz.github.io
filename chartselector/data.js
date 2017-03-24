@@ -214,7 +214,20 @@
       }  
     },
     "Ranking":{},
-    "Progress":{},
+    "Progress":{
+      "q":"Choose one:",
+      "o":{
+        "For a dashboard":{
+          "q":"Use a <a href='https://www.google.com/search?q=gauge+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiBrtC0t-7SAhUHh1QKHZVPBooQ_AUICCgB&biw=1440&bih=803'>Guage</a>"
+        },
+        "Project Managment":{
+          "q":"Use a <a href='https://www.google.com/search?q=gauge+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiBrtC0t-7SAhUHh1QKHZVPBooQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=gantt+chart&*'>Gantt chart</a>"
+        },
+        "Something else":{
+          "q":"Use a <a href='https://www.google.com/search?q=gauge+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiBrtC0t-7SAhUHh1QKHZVPBooQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=bullet+chart&*'>Bullet chart</a>"
+        }  
+      }  
+    },
     "Deviation":{}
   }
 }
