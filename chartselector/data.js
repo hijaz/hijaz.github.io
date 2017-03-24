@@ -155,7 +155,32 @@
     "Distribution":{
       "q":"How many variables?",
       "o":{
-        "one":{},
+        "one":{
+          "q":"Is the data grouped?",
+          "o":{
+            "Yes":{
+              "q":"Show actual frequency or just the general trend?",
+              "o":{
+                "distribution frequency":{
+                  "q":"Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803#tbm=isch&q=column+histogram&*'>Column histogram</a>"
+                },
+                "distribution trend":{
+                  "q":"Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803#tbm=isch&q=smoothed+histogram&*'>Smoothed histogram</a>"
+                }  
+              }  
+            },
+            "No":{
+              "q":"Show probability density?",
+              "o":{
+                "Yes":{
+                  "q":"Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803#tbm=isch&q=violin+plot&*'>violin plot</a>"
+                },
+                "No":{
+                  "q":"Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803#tbm=isch&q=box+plot&*'>box plot</a>"
+                }
+            }  
+          }  
+        },
         "two":{
           "q":"Continuous or discrete?",
           "o":{
