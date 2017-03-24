@@ -152,7 +152,42 @@
         }
       }
     },
-    "Distribution":{},
+    "Distribution":{
+      "q":"How many variables?",
+      "o":{
+        "one":{},
+        "two":{
+          "q":"Continuous or discrete?",
+          "o":{
+            "Continuous":{
+              "q":"Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803#tbm=isch&q=scatterplot&*'>scatterplot</a>"
+            },
+            "One of the vars is discrete":{
+              "q":"See all data points?",
+              "o":{
+                "All":{
+                  "q":"Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803#tbm=isch&q=jittered+scatterplot&*'>Jittered scatterplot</a>"
+                },
+                "Not really":{
+                  "q":"Show probability density?",
+                  "o":{
+                    "Yes":{
+                      "q":"Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803#tbm=isch&q=violin+plot&*'>violin plot</a>"
+                    },
+                    "No":{
+                      "q":"Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803#tbm=isch&q=box+plot&*'>box plot</a>"
+                    }  
+                   } 
+                }  
+              }  
+            }  
+          }  
+        },
+        "three":{
+          "q":"Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803'>3d Area Chart</a>"
+        }  
+      }  
+    },
     "Ranking":{},
     "Progress":{},
     "Deviation":{}
