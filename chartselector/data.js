@@ -50,7 +50,57 @@
         }
       }
     },
-    "Relationship":{},
+    "Relationship":{
+      "q":"How many variables?",
+      "o":{
+        "2":{
+          "q":"Show all data or just the relationship?",
+          "o":{
+            "Show all data points":{
+              "q":"Is one of the variables discrete?",
+              "o":{
+                "Yes":{
+                  "q":"Use a <a href='https://www.google.com/search?q=bubble+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwji3qyqq-7SAhXnhVQKHf1JDvMQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=jitter+scatterplot&*'>Jitter scatterplot</a>"
+                },
+                "No":{
+                  "q":"Also show distribution?",
+                  "o":{
+                    "Yes":{
+                      "q":"Use a <a href='https://www.google.com/search?q=bubble+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwji3qyqq-7SAhXnhVQKHf1JDvMQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=marginal+histogram+scatterplot&*'>Marginal histogram with a scatterplot</a>"
+                    },
+                    "No":{
+                      "q":"Use a <a href='https://www.google.com/search?q=bubble+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwji3qyqq-7SAhXnhVQKHf1JDvMQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=scatterplot&*'>scatterplot</a>"
+                    }  
+                  }  
+                }  
+              } 
+            },
+            "Show just the trend of relationship":{
+              "q":"Show correlation?",
+              "o":{
+                "Yes":{
+                  "q":"Use a <a href='https://www.google.com/search?q=bubble+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwji3qyqq-7SAhXnhVQKHf1JDvMQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=correlogram&*'>correlogram</a>"
+                },
+                "No":{
+                  "q":"Is one of the variables time?",
+                  "o":{
+                    "Yes":{
+                      "q":"Use a <a href='https://www.google.com/search?q=bubble+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwji3qyqq-7SAhXnhVQKHf1JDvMQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=Calendar+Heatmap&*'>Calendar Heatmap</a>"
+                    },
+                    "No":{
+                      "q":"Use a <a href='https://www.google.com/search?q=bubble+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwji3qyqq-7SAhXnhVQKHf1JDvMQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=Heatmap&*'>Heatmap</a>"
+                    }  
+                  }
+                }  
+              }
+            }  
+          }
+        },
+        "more than 2":{
+          "q":"Use a <a href='https://www.google.com/search?q=bubble+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwji3qyqq-7SAhXnhVQKHf1JDvMQ_AUICCgB&biw=1440&bih=803'>bubble chart</a>"
+        }  
+      }  
+    },
     "Comparison":{
       "q":"Visualize change over time?",
       "o":{
