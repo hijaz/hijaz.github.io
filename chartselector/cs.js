@@ -17,7 +17,13 @@ jQuery(document).ready(function(){
   }
   update();
   $(document).on("click", ".q", function(event){
-    alert($(this).text());
+    var k = ($(this).text());
+    for (var key in cur.o) {
+        if(key == k){
+          cur = cur.o[key];
+        }
+    }
+    update();
   });
   
   
