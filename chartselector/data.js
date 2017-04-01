@@ -180,7 +180,8 @@ var data = {
 								}
 							}
 						}
-					},
+					}
+				},
 					"two": {
 						"q": "Continuous or discrete?",
 						"o": {
@@ -211,7 +212,6 @@ var data = {
 					"three": {
 						"q": "Use a <a href='https://www.google.com/search?q=3d+area+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQtcb7ru7SAhUIsVQKHTfnDZ0Q_AUICCgB&biw=1440&bih=803'>3d Area Chart</a>"
 					}
-				}
 			}
 		},
 
