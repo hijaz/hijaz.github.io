@@ -225,10 +225,10 @@ var data = {
 						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=slope+chart&*'>Slope Chart</a>"
 					},
 					"Lollipop chart": {
-						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=lollipop+chart&*'></a>"
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=lollipop+chart&*'>Lollipop Chart</a>"
 					},
 					"Dumbbell plot": {
-						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=dumbbell+plot&*'>"
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=dumbbell+plot&*'>Dumbbell Plot</a>"
 					}
 				}
 			},
