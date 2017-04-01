@@ -1,4 +1,4 @@
-{
+var data = {
 	"q": "Analysis Type?",
 	"o": {
 		"Composition": {
@@ -248,4 +248,4 @@
 				}
 			}
 	}
-}
+};
