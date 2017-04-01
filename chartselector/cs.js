@@ -1,9 +1,5 @@
 
 jQuery(document).ready(function(){
-  console.log(data);
-
-  //<button type="button" class="q btn btn-default">Button</button> 
-  var stack = [];
   var cur = data;
   var $text = jQuery('#text');
   var $btns = jQuery('#btns');
@@ -18,11 +14,7 @@ jQuery(document).ready(function(){
   update();
   $(document).on("click", ".q", function(event){
     var k = ($(this).text());
-    for (var key in cur.o) {
-        if(key == k){
-          cur = cur.o[key];
-        }
-    }
+    cur = cur.o[k];
     update();
   });
   
