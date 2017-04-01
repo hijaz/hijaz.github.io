@@ -218,10 +218,18 @@ var data = {
 			"Ranking": {
 				"q": "Choose one",
 				"o": {
-					"Ordered bar chart": {},
-					"Slope chart": {},
-					"Lollipop chart": {},
-					"Dumbell plot": {}
+					"Ordered bar chart": {
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803'>Ordered Bar Chart</a>"
+					},
+					"Slope chart": {
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=slope+chart&*'>Slope Chart</a>"
+					},
+					"Lollipop chart": {
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=lollipop+chart&*'></a>"
+					},
+					"Dumbbell plot": {
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=dumbbell+plot&*'>"
+					}
 				}
 			},
 			"Progress": {
@@ -241,10 +249,18 @@ var data = {
 			"Deviation": {
 				"q": "Choose one:",
 				"o": {
-					"Diverging bars": {},
-					"Diverging lollipop chart": {},
-					"Diverging dot plot": {},
-					"Area Chart": {}
+					"Diverging bars": {
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=diverging+bars&*'>Diverging Bars</a>"
+					},
+					"Diverging lollipop chart": {
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=diverging+lollipop+chart&*'>Diverging lollipop chart</a>"
+					},
+					"Diverging dot plot": {
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=diverging+dot+plot&*'>Diverging dot plot</a>"
+					},
+					"Area Chart": {
+						"q":"<a href='https://www.google.com/search?q=ordered+bar+chart&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjp14r2w4LTAhXGYyYKHfrkCwEQ_AUICCgB&biw=1440&bih=803#tbm=isch&q=area+chart&*'>Area Chart</a>"
+					}
 				}
 			}
 	}
