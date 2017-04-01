@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
     $text.text(cur.q);
     $btns.html('');
     for (var key in cur.o) {
-        console.log(key + " -> " + p[key]);
+        console.log(key + " -> " + cur.o[key]);
         $btns.append('<button type="button" class="q btn btn-default">'+key+'</button>');
     }
   }
