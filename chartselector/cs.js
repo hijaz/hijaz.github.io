@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
   var $text = jQuery('#text');
   var $btns = jQuery('#btns');
   var update = function(){
-    $text.text(cur.q);
+    $text.html(cur.q);
     $btns.html('');
     for (var key in cur.o) {
         console.log(key + " -> " + cur.o[key]);
