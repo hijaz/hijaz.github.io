@@ -9,7 +9,11 @@ jQuery(document).ready(function(){
   var $btns = jQuery('#btns');
   var update = function(){
     $text.text(cur.q);
-    
+    $btns.html('');
+    for (var key in cur.o) {
+        console.log(key + " -> " + p[key]);
+        $btns.append('<button type="button" class="q btn btn-default">'+key+'</button>');
+    }
   }
   update();
   $(document).on("click", ".q", function(event){
