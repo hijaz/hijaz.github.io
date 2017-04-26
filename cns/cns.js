@@ -1,26 +1,17 @@
 var cns = {};
 cns.is_logged_in = false;
-cns.config = {
-    apiKey: "AIzaSyB9B968uA15pTg_VpJS1VoApHjJJhWlRtc",
-    authDomain: "cands-fcd62.firebaseapp.com",
-    databaseURL: "https://cands-fcd62.firebaseio.com/",
-    storageBucket: "bucket.appspot.com"
-};
-
-//init firebase
-cns.fb = firebase.initializeApp(cns.config);
 
 //login flow
 cns.login_flow = function(){
   //is user signed in
-  cns.fb.auth().onAuthStateChanged(function(user) {
+  firebase.auth().onAuthStateChanged(function(user) {
       debugger;
     if (user) {
       // User is signed in.
       cns.is_logged_in = true;
       cns.user = user;
       //access db
-      cns.database = cns.fb.database();  
+      cns.database = firebase.database();  
       /**  
       firebase.auth().getRedirectResult().then(function(result) {
         debugger;
@@ -56,7 +47,7 @@ cns.login_flow();
 
 //signout
 cns.log_out = function(){
-    cns.fb.auth().signOut().then(function() {
+    firebase.auth().signOut().then(function() {
       // Sign-out successful.
     }).catch(function(error) {
       // An error happened.
