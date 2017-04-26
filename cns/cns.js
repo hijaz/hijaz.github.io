@@ -7,6 +7,9 @@ cns.config = {
     storageBucket: "bucket.appspot.com"
 };
 
+//init firebase
+firebase.initializeApp(cns.config);
+
 //login flow
 cns.login_flow = function(){
   //is user signed in
@@ -16,8 +19,7 @@ cns.login_flow = function(){
       // User is signed in.
       cns.is_logged_in = true;
       cns.user = user;
-      //init app & access db
-      firebase.initializeApp(cns.config);
+      //access db
       cns.database = firebase.database();  
       /**  
       firebase.auth().getRedirectResult().then(function(result) {
