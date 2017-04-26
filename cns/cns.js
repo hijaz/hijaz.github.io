@@ -38,7 +38,7 @@ cns.login_flow = function(){
       // No user is signed in.
       //redirect to login
       cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
-      cns.fb.auth().signInWithRedirect(cns.auth_google_provider);
+      firebase.auth().signInWithRedirect(cns.auth_google_provider);
     }
   });
 };
