@@ -8,19 +8,19 @@ cns.config = {
 };
 
 //init firebase
-firebase.initializeApp(cns.config);
+cns.fb = firebase.initializeApp(cns.config);
 
 //login flow
 cns.login_flow = function(){
   //is user signed in
-  firebase.auth().onAuthStateChanged(function(user) {
+  cns.fb.auth().onAuthStateChanged(function(user) {
       debugger;
     if (user) {
       // User is signed in.
       cns.is_logged_in = true;
       cns.user = user;
       //access db
-      cns.database = firebase.database();  
+      cns.database = cns.fb.database();  
       /**  
       firebase.auth().getRedirectResult().then(function(result) {
         debugger;
@@ -47,7 +47,7 @@ cns.login_flow = function(){
       // No user is signed in.
       //redirect to login
       cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
-      firebase.auth().signInWithRedirect(cns.auth_google_provider);
+      cns.fb.auth().signInWithRedirect(cns.auth_google_provider);
     }
   });
 };
@@ -56,7 +56,7 @@ cns.login_flow();
 
 //signout
 cns.log_out = function(){
-    firebase.auth().signOut().then(function() {
+    cns.fb.auth().signOut().then(function() {
       // Sign-out successful.
     }).catch(function(error) {
       // An error happened.
