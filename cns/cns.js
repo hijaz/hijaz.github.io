@@ -9,7 +9,7 @@ cns.config = {
 
 //login flow
 cns.login_flow = function(){
-  debugger();
+  debugger;
   //is user signed in
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
