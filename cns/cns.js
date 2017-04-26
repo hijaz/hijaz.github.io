@@ -16,6 +16,7 @@ cns.login_flow = function(){
       // User is signed in.
       cns.is_logged_in = true;
       firebase.auth().getRedirectResult().then(function(result) {
+        debugger;
         if (result.credential) {
           // This gives you a Google Access Token. You can use it to access the Google API.
           var token = result.credential.accessToken;
