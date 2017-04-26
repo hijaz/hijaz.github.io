@@ -46,6 +46,8 @@ cns.login_flow = function(){
   });
 };
 
+cns.login_flow();
+
 //signout
 /**
 firebase.auth().signOut().then(function() {
