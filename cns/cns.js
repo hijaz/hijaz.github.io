@@ -15,6 +15,11 @@ cns.login_flow = function(){
     if (user) {
       // User is signed in.
       cns.is_logged_in = true;
+      cns.user = user;
+      //init app & access db
+      firebase.initializeApp(cns.config);
+      cns.database = firebase.database();  
+      /**  
       firebase.auth().getRedirectResult().then(function(result) {
         debugger;
         if (result.credential) {
@@ -25,10 +30,6 @@ cns.login_flow = function(){
         // The signed-in user info.
         cns.user = result.user;
         
-        //init app & access db
-        firebase.initializeApp(cns.config);
-        cns.database = firebase.database();
-
       }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -39,6 +40,7 @@ cns.login_flow = function(){
         var credential = error.credential;
         // ...
       });
+      **/
     } else {
       // No user is signed in.
       //redirect to login
@@ -51,10 +53,11 @@ cns.login_flow = function(){
 cns.login_flow();
 
 //signout
-/**
-firebase.auth().signOut().then(function() {
-  // Sign-out successful.
-}).catch(function(error) {
-  // An error happened.
-});
-**/
+cns.log_out = function(){
+    firebase.auth().signOut().then(function() {
+      // Sign-out successful.
+    }).catch(function(error) {
+      // An error happened.
+    });
+};
+
