@@ -3,9 +3,6 @@ var cns = {};
 //auth
 cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
 
-//redirect to login
-firebase.auth().signInWithRedirect(cns.auth_google_provider);
-
 firebase.auth().getRedirectResult().then(function(result) {
   debugger;
   if (result.credential) {
@@ -16,6 +13,9 @@ firebase.auth().getRedirectResult().then(function(result) {
   // The signed-in user info.
   var user = result.user;
 }).catch(function(error) {
+  //redirect to login
+firebase.auth().signInWithRedirect(cns.auth_google_provider);
+  
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
