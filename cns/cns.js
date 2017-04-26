@@ -8,7 +8,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     firebase.auth().getRedirectResult().then(function(result) {
-      debugger;
       if (result.credential) {
         // This gives you a Google Access Token. You can use it to access the Google API.
         var token = result.credential.accessToken;
@@ -17,8 +16,6 @@ firebase.auth().onAuthStateChanged(function(user) {
       // The signed-in user info.
       var user = result.user;
     }).catch(function(error) {
-
-
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
@@ -42,4 +39,19 @@ firebase.auth().signOut().then(function() {
 }).catch(function(error) {
   // An error happened.
 });
+**/
+
+/**
+  // Set the configuration for your app
+  // TODO: Replace with your project's config object
+  var config = {
+    apiKey: "AIzaSyB9B968uA15pTg_VpJS1VoApHjJJhWlRtc",
+    authDomain: "cands-fcd62.firebaseapp.com",
+    databaseURL: "https://cands-fcd62.firebaseio.com/",
+    storageBucket: "bucket.appspot.com"
+  };
+  firebase.initializeApp(config);
+
+  // Get a reference to the database service
+  var database = firebase.database();
 **/
