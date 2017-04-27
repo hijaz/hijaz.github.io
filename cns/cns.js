@@ -54,3 +54,19 @@ cns.log_out = function(){
     });
 };
 
+//write to db
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
+
+//read from db once 
+var userId = firebase.auth().currentUser.uid;
+return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+  var username = snapshot.val().username;
+  // ...
+});
+
