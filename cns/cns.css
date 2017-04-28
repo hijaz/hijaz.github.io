@@ -3,5 +3,13 @@
 body{
   font-family: 'Roboto', sans-serif;
   background-color: #FF1D44;
-  color: #FBEBAF;
+}
+.goals{
+  background-color: #FF1D44;
+}
+.carrots{
+  background-color: #74BF9E;
+}
+.sticks{
+  background-color: #FBEBAF;
 }
