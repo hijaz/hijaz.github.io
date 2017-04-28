@@ -2,27 +2,11 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  background-color: #333;
-}
-.goals{
   background-color: #FF1D44;
 }
+.goals{
+}
 .carrots{
-  background-color: #74BF9E;
 }
 .sticks{
-  background-color: #FBEBAF;
-}
-.row.no-gutter {
-  margin-left: 0;
-  margin-right: 0;
-}
-.row.no-gutter [class*='col-']:not(:first-child),
-.row.no-gutter [class*='col-']:not(:last-child) {
-  padding-right: 0;
-  padding-left: 0;
-}
-.row > div {
-  background: lightgrey;
-  border: 1px solid;
 }
