@@ -43,7 +43,7 @@ cns.login_flow = function(){
   });
 };
 
-cns.login_flow();
+//cns.login_flow();
 
 //signout
 cns.log_out = function(){
