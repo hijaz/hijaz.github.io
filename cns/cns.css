@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@media (min-width: 768px){
+  .login{
+    padding-left:12px;
+  }
+}
+@media (min-width: 992px) and (orientation:portrait) {
+  .login{
+    padding-left:12px;
+  }
+}
+
+@media (min-width: 992px) and (orientation:landscape) {
+  .login{
+    padding-right:12px;
+  }
+}
+@media (min-width: 1200px){
+  .login{
+    padding-right:12px;
+  }
 
 body{
   font-family: 'Roboto', sans-serif;
