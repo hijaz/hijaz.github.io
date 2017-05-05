@@ -41,6 +41,8 @@ cns.login_flow = function(){
       **/
     } else {
       // No user is signed in.
+      jQuery('#login_details').hide();
+      jQuery('.login').show();
       //redirect to login
       //cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
       //firebase.auth().signInWithRedirect(cns.auth_google_provider);
