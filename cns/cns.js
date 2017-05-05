@@ -5,7 +5,6 @@ cns.is_logged_in = false;
 cns.login_flow = function(){
   //is user signed in
   firebase.auth().onAuthStateChanged(function(user) {
-      debugger;
     if (user) {
       // User is signed in.
       cns.is_logged_in = true;
@@ -86,8 +85,8 @@ jQuery(document).ready(function(){
     cns.login_flow();
   });
   $logout.click(function(){
-    cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signOut(cns.auth_google_provider);
+    debugger;
+    cns.logout();
   });
   //trigger login flow
   cns.login_flow();
