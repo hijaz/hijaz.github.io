@@ -81,8 +81,13 @@ return firebase.database().ref('/users/' + userId).once('value').then(function(s
 //attach events
 jQuery(document).ready(function(){
   var $login = jQuery('.login');
+  var $logout = jQUery('#login_name');
   $login.click(function(){
     cns.login_flow();
+  });
+  $logout.click(function(){
+    cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signOut(cns.auth_google_provider);
   });
   //trigger login flow
   cns.login_flow();
