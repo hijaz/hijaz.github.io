@@ -4,8 +4,8 @@ cns.is_logged_in = false;
 //login flow
 cns.login_flow = function(){
   //is user signed in
-  //firebase.auth().onAuthStateChanged(function(user) {
-    if (firebase.auth().currentUser) {
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
       // User is signed in.
       cns.is_logged_in = true;
       cns.user = firebase.auth().currentUser;
@@ -42,11 +42,17 @@ cns.login_flow = function(){
     } else {
       // No user is signed in.
       //redirect to login
-      cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
-      firebase.auth().signInWithRedirect(cns.auth_google_provider);
+      //cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
+      //firebase.auth().signInWithRedirect(cns.auth_google_provider);
     }
-  //});
+  });
 };
+
+//signin
+cns.log_in = function(){
+  cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithRedirect(cns.auth_google_provider);
+}
 
 //signout
 cns.log_out = function(){
@@ -83,7 +89,7 @@ jQuery(document).ready(function(){
   var $login = jQuery('.login');
   var $logout = jQuery('#login_name');
   $login.click(function(){
-    cns.login_flow();
+    cns.log_in();
   });
   $logout.click(function(){
     cns.log_out();
