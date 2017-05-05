@@ -85,8 +85,7 @@ jQuery(document).ready(function(){
     cns.login_flow();
   });
   $logout.click(function(){
-    debugger;
-    cns.logout();
+    cns.log_out();
   });
   //trigger login flow
   cns.login_flow();
