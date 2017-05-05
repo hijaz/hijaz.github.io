@@ -84,4 +84,6 @@ jQuery(document).ready(function(){
   $login.click(function(){
     cns.login_flow();
   });
+  //trigger login flow
+  cns.login_flow();
 });
