@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-@media (max-width: 768px){
-  .login{
-    padding-left:12px;
-  }
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #FF1D44;
 }
-@media (max-width: 992px) and (orientation:portrait) {
-  .login{
-    padding-right:12px;
-  }
+.login{
+  padding-right:12px;
+}
+.goals{
+}
+.carrots{
+}
+.sticks{
 }
 
 @media (max-width: 992px) and (orientation:landscape) {
@@ -15,18 +18,13 @@
     padding-right:12px;
   }
 }
-@media (max-width: 1200px){
+@media (max-width: 992px) and (orientation:portrait) {
   .login{
     padding-right:12px;
   }
-
-body{
-  font-family: 'Roboto', sans-serif;
-  background-color: #FF1D44;
 }
-.goals{
-}
-.carrots{
-}
-.sticks{
+@media (max-width: 768px){
+  .login{
+    padding-left:12px;
+  }
 }
