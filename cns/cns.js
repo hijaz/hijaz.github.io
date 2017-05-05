@@ -57,35 +57,15 @@ cns.log_in = function(){
 }
 
 //signout
-cns.log_out_ = function(){
+cns.log_out = function(){
     firebase.auth().signOut().then(function() {
-      debugger;
       // Sign-out successful.
     }).catch(function(error) {
       // An error happened.
-      debugger;
       console.log(error);
     });
 };
 
-/**
-cns.log_out__ = function(){
-  Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(status -> {
-        mFirebaseAuth.signOut();
-    });
-}  
-**/
-/**
-cns.log_out = function(){
-  debugger;
-  Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(new ResultCallback<Status>(){
-        @Override
-        public void onResult(@NonNull Status status){
-          mAuth.signOut();
-        }
-      });
-};
-**/
 //write to db
 function writeUserData(userId, name, email, imageUrl) {
   firebase.database().ref('users/' + userId).set({
