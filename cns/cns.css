@@ -13,6 +13,16 @@ body{
 }
 .sticks{
 }
+#login_details{
+  margin-top:5px;
+}
+#login_name{
+  padding-right:5px;
+}
+#login_img{
+  width:40px;
+  border-radius:20px;
+}
 
 @media (max-width: 992px) and (orientation:landscape) {
   .login{
