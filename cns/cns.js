@@ -68,12 +68,13 @@ cns.log_out_ = function(){
     });
 };
 
-
+/**
 cns.log_out__ = function(){
   Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(status -> {
         mFirebaseAuth.signOut();
     });
-}    
+}  
+**/
 /**
 cns.log_out = function(){
   debugger;
