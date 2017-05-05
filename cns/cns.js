@@ -12,6 +12,8 @@ cns.login_flow = function(){
       cns.user = user;
       //hide sign in button
       jQuery('.login').hide();
+      //show user details
+      jQuery('#login_details').show();
       //access db
       cns.database = firebase.database();  
       /**  
