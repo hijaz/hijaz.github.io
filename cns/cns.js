@@ -48,14 +48,15 @@ cns.login_flow = function(){
   });
 };
 
-//cns.login_flow();
-
 //signout
 cns.log_out = function(){
     firebase.auth().signOut().then(function() {
+      debugger;
       // Sign-out successful.
     }).catch(function(error) {
       // An error happened.
+      debugger;
+      console.log(error);
     });
 };
 
