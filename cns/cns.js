@@ -4,11 +4,11 @@ cns.is_logged_in = false;
 //login flow
 cns.login_flow = function(){
   //is user signed in
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
+  //firebase.auth().onAuthStateChanged(function(user) {
+    if (firebase.auth().currentUser) {
       // User is signed in.
       cns.is_logged_in = true;
-      cns.user = user;
+      cns.user = firebase.auth().currentUser;
       //hide sign in button
       jQuery('.login').hide();
       //show user details
@@ -45,7 +45,7 @@ cns.login_flow = function(){
       cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth().signInWithRedirect(cns.auth_google_provider);
     }
-  });
+  //});
 };
 
 //signout
