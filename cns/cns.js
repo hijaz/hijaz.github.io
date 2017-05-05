@@ -14,6 +14,8 @@ cns.login_flow = function(){
       jQuery('.login').hide();
       //show user details
       jQuery('#login_details').show();
+      jQuery('#login_name').text(cns.user.displayName);
+      jQuery('#login_img').attr('src',cns.user.photoURL);
       //access db
       cns.database = firebase.database();  
       /**  
