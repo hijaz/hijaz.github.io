@@ -10,6 +10,8 @@ cns.login_flow = function(){
       // User is signed in.
       cns.is_logged_in = true;
       cns.user = user;
+      //hide sign in button
+      jQuery('.login').hide();
       //access db
       cns.database = firebase.database();  
       /**  
