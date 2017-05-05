@@ -71,3 +71,11 @@ return firebase.database().ref('/users/' + userId).once('value').then(function(s
   // ...
 });
 **/
+
+//attach events
+jQuery(document).ready(function(){
+  var $login = jQuery('.login');
+  $login.click(function(){
+    cns.login_flow();
+  });
+});
