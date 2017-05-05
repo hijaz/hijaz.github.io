@@ -68,26 +68,23 @@ cns.log_out_ = function(){
     });
 };
 
-/**
 
-Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(status -> {
+cns.log_out__ = function(){
+  Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(status -> {
         mFirebaseAuth.signOut();
     });
-    
-**/    
-
+}    
+/**
 cns.log_out = function(){
   debugger;
-  Auth.GoogleSignInApi.signOut(mGoogleApiClient)
-    .setResultCallback(
-      new ResultCallback<Status>(){
+  Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(new ResultCallback<Status>(){
         @Override
         public void onResult(@NonNull Status status){
           mAuth.signOut();
         }
       });
 };
-
+**/
 //write to db
 function writeUserData(userId, name, email, imageUrl) {
   firebase.database().ref('users/' + userId).set({
