@@ -17,35 +17,11 @@ cns.login_flow = function(){
       jQuery('#login_img').attr('src',cns.user.photoURL);
       //access db
       cns.database = firebase.database();  
-      /**  
-      firebase.auth().getRedirectResult().then(function(result) {
-        debugger;
-        if (result.credential) {
-          // This gives you a Google Access Token. You can use it to access the Google API.
-          var token = result.credential.accessToken;
-          // ...
-        }
-        // The signed-in user info.
-        cns.user = result.user;
-        
-      }).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // The email of the user's account used.
-        var email = error.email;
-        // The firebase.auth.AuthCredential type that was used.
-        var credential = error.credential;
-        // ...
-      });
-      **/
+
     } else {
       // No user is signed in.
       jQuery('#login_details').hide();
       jQuery('.login').show();
-      //redirect to login
-      //cns.auth_google_provider = new firebase.auth.GoogleAuthProvider();
-      //firebase.auth().signInWithRedirect(cns.auth_google_provider);
     }
   });
 };
@@ -70,22 +46,51 @@ cns.log_out = function(){
 cns.data={};
 
 //write to db
-function writeUserData() {
+cns.data.write = function () {
   var userId = firebase.auth().currentUser.uid;
-  return firebase.database().ref('users/' + userId).set({
-    'test':'testing'
-  });
+  return firebase.database().ref('users/' + userId).set(cns.data);
 }
 
 //read from db once 
-function getSnapShot(){
+cns.data.read = function(){
   var userId = firebase.auth().currentUser.uid;
   return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
     //var username = snapshot.val().username;
-    cns.data= snapshot;
+    cns.data= snapshot.val();
   });
 }
 
+//init db
+cns.data.init = function(){
+  var userId = firebase.auth().currentUser.uid;
+  cns.data.read();
+  if(cns.data.timestamp){
+    //existing user
+  }else{
+    //first time user
+    cns.data.timestamp = new Date().getTime();
+    cns.data.habits = {
+                      'Sample Habit - Workout':{
+                        'good':true,
+                        'carrots': 2
+                        'sticks': 2
+                      }
+                     };
+    cns.data.carrots = {
+                  'Sample Carrot - Pizza':{
+                    'unit':slice,
+                    'price': 4
+                  }
+                 };
+    cns.data.sticks = {
+                  'Sample Stick - Squats':{
+                    'unit': rep,
+                    'price': 1
+                  }
+                 };
+    cns.data.write();
+  }
+}
 
 //attach events
 jQuery(document).ready(function(){
