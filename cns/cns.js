@@ -71,6 +71,7 @@ cns.data={};
 
 //write to db
 function writeUserData() {
+  var userId = firebase.auth().currentUser.uid;
   return firebase.database().ref('users/' + userId).set({
     'test':'testing'
   });
