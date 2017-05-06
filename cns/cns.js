@@ -72,19 +72,19 @@ cns.data.init = function(){
     cns.data.habits = {
                       'Sample Habit - Workout':{
                         'good':true,
-                        'carrots': 2
+                        'carrots': 2,
                         'sticks': 2
                       }
                      };
     cns.data.carrots = {
                   'Sample Carrot - Pizza':{
-                    'unit':slice,
+                    'unit':'slice',
                     'price': 4
                   }
                  };
     cns.data.sticks = {
                   'Sample Stick - Squats':{
-                    'unit': rep,
+                    'unit': 'rep',
                     'price': 1
                   }
                  };
