@@ -44,6 +44,7 @@ cns.log_out = function(){
 };
 
 //data
+cns.db={};
 cns.db.data={};
 
 //write to db
