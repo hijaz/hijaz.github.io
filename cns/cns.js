@@ -66,23 +66,25 @@ cns.log_out = function(){
     });
 };
 
+//data
+cns.data={};
+
 //write to db
-function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('users/' + userId).set({
-    username: name,
-    email: email,
-    profile_picture : imageUrl
+function writeUserData() {
+  return firebase.database().ref('users/' + userId).set({
+    'test':'testing'
   });
 }
 
 //read from db once 
-/**
-var userId = firebase.auth().currentUser.uid;
-return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
-  var username = snapshot.val().username;
-  // ...
-});
-**/
+function getSnapShot(){
+  var userId = firebase.auth().currentUser.uid;
+  return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+    //var username = snapshot.val().username;
+    cns.data= snapshot;
+  });
+}
+
 
 //attach events
 jQuery(document).ready(function(){
