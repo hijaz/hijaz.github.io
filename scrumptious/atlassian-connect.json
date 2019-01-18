@@ -1,0 +1,26 @@
+{
+  "name": "Scrumptious",
+  "description": "Visualized Scrum",
+  "key": "com.hassanijaz.scrumptious",
+  "baseUrl": "https://hassanijaz.com/scrumptious",
+  "vendor": {
+    "name": "Scrumptious, Inc.",
+    "url": "http://hassanijaz.com/scrumptious"
+  },
+  "authentication": {
+    "type": "none"
+  },
+  "apiVersion": 1,
+  "modules": {
+    "generalPages": [
+      {
+        "url": "/helloworld.html",
+        "key": "hello-world",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Scrumptious"
+        }
+      }
+    ]
+  }
+}
