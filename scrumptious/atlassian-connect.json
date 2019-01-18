@@ -2,10 +2,10 @@
   "name": "Scrumptious",
   "description": "Visualized Scrum",
   "key": "com.hassanijaz.scrumptious",
-  "baseUrl": "https://hassanijaz.com/scrumptious",
+  "baseUrl": "https://www.hassanijaz.com/scrumptious",
   "vendor": {
     "name": "Scrumptious, Inc.",
-    "url": "http://hassanijaz.com/scrumptious"
+    "url": "http://www.hassanijaz.com/scrumptious"
   },
   "authentication": {
     "type": "none"
