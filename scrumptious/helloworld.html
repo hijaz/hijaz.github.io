@@ -16,47 +16,47 @@
   </body>
   <script>
     function init(){
-      alert('doc loaded')
+//       alert('doc loaded')
       
-      AP.require('request', function(request) {
-        request({
-          url: '/rest/api/latest/project',
-          success: function(response) {
-            // convert the string response to JSON
-            response = JSON.parse(response);
+//       AP.require('request', function(request) {
+//         request({
+//           url: '/rest/api/latest/project',
+//           success: function(response) {
+//             // convert the string response to JSON
+//             response = JSON.parse(response);
 
-            // dump out the response to the console
-            console.log(response);
-          },
-          error: function() {
-            console.log(arguments);
-          }  
-        });
-      });
+//             // dump out the response to the console
+//             console.log(response);
+//           },
+//           error: function() {
+//             console.log(arguments);
+//           }  
+//         });
+//       });
       
-      AP.jira.openCreateIssueDialog(function(issues){
-        alert(issues[0]['fields']['summary']);
-      }, {
-        pid: 10000,
-        issueType: 1,
-        fields : {
-          summary: "Hello World",
-          environment : "My environment",
-          priority : 2,
-          assignee: "tom",
-          reporter: "bob",
-          labels : ["Mylabel","MyOtherLabel"],
-          description : "My first Issue",
-          duedate : "11/Oct/16",
-          fixVersions : 10001,
-          versions : 10000,
-          components : "My component",
-          timetracking_originalestimate: "2w",
-          timetracking_remainingestimate: "3d",
-          worklog_activate: true,
-          worklog_timeLogged: "2"
-        }
-      });
+//       AP.jira.openCreateIssueDialog(function(issues){
+//         alert(issues[0]['fields']['summary']);
+//       }, {
+//         pid: 10000,
+//         issueType: 1,
+//         fields : {
+//           summary: "Hello World",
+//           environment : "My environment",
+//           priority : 2,
+//           assignee: "tom",
+//           reporter: "bob",
+//           labels : ["Mylabel","MyOtherLabel"],
+//           description : "My first Issue",
+//           duedate : "11/Oct/16",
+//           fixVersions : 10001,
+//           versions : 10000,
+//           components : "My component",
+//           timetracking_originalestimate: "2w",
+//           timetracking_remainingestimate: "3d",
+//           worklog_activate: true,
+//           worklog_timeLogged: "2"
+//         }
+//       });
       
       // Get the current user info using a Promise
 
