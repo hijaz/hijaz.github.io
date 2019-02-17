@@ -15,10 +15,23 @@
     </section>
   </body>
   <script>
-    console.log('SOMETHING')
-    alert('ALERT')
     function init(){
-    alert('doc loaded')
+      alert('doc loaded')
+      AP.require('request', function(request) {
+        request({
+          url: '/rest/api/latest/project',
+          success: function(response) {
+            // convert the string response to JSON
+            response = JSON.parse(response);
+
+            // dump out the response to the console
+            console.log(response);
+          },
+          error: function() {
+            console.log(arguments);
+          }  
+        });
+      });
     }
   </script>
 </html>
