@@ -17,6 +17,7 @@
   <script>
     function init(){
       alert('doc loaded')
+      
       AP.require('request', function(request) {
         request({
           url: '/rest/api/latest/project',
@@ -32,6 +33,31 @@
           }  
         });
       });
+      
+      AP.jira.openCreateIssueDialog(function(issues){
+        alert(issues[0]['fields']['summary']);
+      }, {
+        pid: 10000,
+        issueType: 1,
+        fields : {
+          summary: "Hello World",
+          environment : "My environment",
+          priority : 2,
+          assignee: "tom",
+          reporter: "bob",
+          labels : ["Mylabel","MyOtherLabel"],
+          description : "My first Issue",
+          duedate : "11/Oct/16",
+          fixVersions : 10001,
+          versions : 10000,
+          components : "My component",
+          timetracking_originalestimate: "2w",
+          timetracking_remainingestimate: "3d",
+          worklog_activate: true,
+          worklog_timeLogged: "2"
+        }
+      });
+      
     }
   </script>
 </html>
