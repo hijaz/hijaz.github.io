@@ -8,16 +8,12 @@
     "url": "http://www.hassanijaz.com/scrumptious"
   },
   "authentication": {
-    "type": "jwt"
+    "type": "none"
   },
   "scopes": [
     "read",
     "write"
   ],
-  "lifecycle": {
-    "installed": "/installed",
-    "uninstalled": "/uninstalled"
-  },
   "apiVersion": 1,
   "modules": {
     "generalPages": [
