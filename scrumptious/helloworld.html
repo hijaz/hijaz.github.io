@@ -8,7 +8,7 @@
     />
     <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
   </head>
-  <body>
+  <body onload="init();">
     <section id="content" class="ac-content">
       <h1>Visualized Scrum</h1>
       <h2>Api Test</h2>
@@ -17,7 +17,7 @@
   <script>
     console.log('SOMETHING')
     alert('ALERT')
-    document.onload = function(){
+    function init(){
     alert('doc loaded')
     }
   </script>
