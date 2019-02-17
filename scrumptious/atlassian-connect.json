@@ -8,7 +8,7 @@
     "url": "http://www.hassanijaz.com/scrumptious"
   },
   "authentication": {
-    "type": "none"
+    "type": "jwt"
   },
   "scopes": [
     "read",
