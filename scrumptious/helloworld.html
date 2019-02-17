@@ -58,6 +58,12 @@
         }
       });
       
+      // Get the current user info using a Promise
+
+      AP.request('/rest/api/2/myself')
+        .then(data => alert(data.body))
+        .catch(e => alert(e.err));
+      
     }
   </script>
 </html>
