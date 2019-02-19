@@ -25,7 +25,7 @@
   <script>
     function getUserInfo() {
       AP.request("/rest/api/2/myself")
-        .then(data => alert(data.body))
+        .then(data => displayData(data))
         .catch(e => alert(e.err));
     }
 
@@ -67,13 +67,18 @@
             response = JSON.parse(response);
 
             // dump out the response to the console
-            alert(response);
+            displayData(response);
           },
           error: function() {
             console.log(arguments);
           }
         });
       });
+    }
+
+    function displayData(data) {
+      //alert("Data Fetched");
+      console.log(data);
     }
   </script>
 </html>
