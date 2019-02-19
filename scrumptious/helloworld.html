@@ -56,8 +56,6 @@
     }
 
     function projectInfo() {
-      alert("doc loaded");
-
       AP.require("request", function(request) {
         request({
           url: "/rest/api/latest/project",
@@ -66,7 +64,7 @@
             response = JSON.parse(response);
 
             // dump out the response to the console
-            console.log(response);
+            alert(response);
           },
           error: function() {
             console.log(arguments);
