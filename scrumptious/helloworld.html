@@ -82,38 +82,37 @@
     }
 
     function createProject() {
-      AP.require("request", function(request) {
-        request({
-          url: "/rest/api/latest/project",
-          type: "POST",
-          data: {
-            key: "EX",
-            name: "Example",
-            projectTypeKey: "business",
-            projectTemplateKey:
-              "com.atlassian.jira-core-project-templates:jira-core-simplified-project-management",
-            description: "Example Project description",
-            leadAccountId: "bd429c95-e27b-4423-a0bd-421cf3d69129",
-            url: "http://atlassian.com",
-            assigneeType: "PROJECT_LEAD",
-            avatarId: 10200,
-            issueSecurityScheme: 10001,
-            permissionScheme: 10011,
-            notificationScheme: 10021,
-            categoryId: 10120
-          },
-          success: function(response) {
-            // convert the string response to JSON
-            response = JSON.parse(response);
+      console.log("creating project");
+      AP.request({
+        url: "/rest/api/latest/project",
+        type: "POST",
+        data: JSON.stringify({
+          key: "EX",
+          name: "Example",
+          projectTypeKey: "business",
+          projectTemplateKey:
+            "com.atlassian.jira-core-project-templates:jira-core-simplified-project-management",
+          description: "Example Project description",
+          leadAccountId: "bd429c95-e27b-4423-a0bd-421cf3d69129",
+          url: "http://atlassian.com",
+          assigneeType: "PROJECT_LEAD",
+          avatarId: 10200,
+          issueSecurityScheme: 10001,
+          permissionScheme: 10011,
+          notificationScheme: 10021,
+          categoryId: 10120
+        })
+      })
+        .then(function(response) {
+          // convert the string response to JSON
+          response = JSON.parse(response);
 
-            // dump out the response to the console
-            displayData(response);
-          },
-          error: function() {
-            console.log(arguments);
-          }
+          // dump out the response to the console
+          displayData(response);
+        })
+        .catch(function() {
+          console.log(arguments);
         });
-      });
     }
 
     function displayData(data) {
