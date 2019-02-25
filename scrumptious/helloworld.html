@@ -17,8 +17,13 @@
       <button onclick="projectInfo()">Get All Projects</button>
       <button onclick="projectInfo()" disabled>Get Active Projects</button>
       <hr />
-      <button onclick="createIssueDialog()">Create Issue</button>
+      Jira Dialog: <button onclick="createIssueDialog()">Create Issue</button>
       <hr />
+      Test Data:
+      <button onclick="createProject()">Generate Test Project</button>
+      <button onclick="">Generate Test Epic</button>
+      <button onclick="">Generate Test Story</button>
+      <button onclick="">Generate Test Task</button>
       <button onclick="">Generate Test Data</button>
     </section>
   </body>
@@ -72,6 +77,33 @@
           error: function() {
             console.log(arguments);
           }
+        });
+      });
+    }
+
+    function createProject() {
+      AP.require("request", function(request) {
+        request({
+          url: "/rest/api/latest/project",
+          type: "POST",
+          data: {
+            key: "EX",
+            name: "Example",
+            projectTypeKey: "business",
+            projectTemplateKey:
+              "com.atlassian.jira-core-project-templates:jira-core-simplified-project-management",
+            description: "Example Project description",
+            leadAccountId: "bd429c95-e27b-4423-a0bd-421cf3d69129",
+            url: "http://atlassian.com",
+            assigneeType: "PROJECT_LEAD",
+            avatarId: 10200,
+            issueSecurityScheme: 10001,
+            permissionScheme: 10011,
+            notificationScheme: 10021,
+            categoryId: 10120
+          },
+          success: function(response) {},
+          error: function() {}
         });
       });
     }
