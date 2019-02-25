@@ -102,8 +102,16 @@
             notificationScheme: 10021,
             categoryId: 10120
           },
-          success: function(response) {},
-          error: function() {}
+          success: function(response) {
+            // convert the string response to JSON
+            response = JSON.parse(response);
+
+            // dump out the response to the console
+            displayData(response);
+          },
+          error: function() {
+            console.log(arguments);
+          }
         });
       });
     }
