@@ -82,6 +82,7 @@
     }
 
     function createProject() {
+      console.log("creating project");
       AP.request({
         url: "/rest/api/latest/project",
         type: "POST",
