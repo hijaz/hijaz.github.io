@@ -1,30 +1,124 @@
-{
-  "name": "Scrumptious",
-  "description": "Visualized Scrum",
-  "key": "com.hassanijaz.scrumptious",
-  "baseUrl": "https://www.hassanijaz.com/scrumptious",
-  "vendor": {
-    "name": "Scrumptious, Inc.",
-    "url": "http://www.hassanijaz.com/scrumptious"
-  },
-  "authentication": {
-    "type": "none"
-  },
-  "scopes": [
-    "read",
-    "write"
-  ],
-  "apiVersion": 1,
-  "modules": {
-    "generalPages": [
-      {
-        "url": "/helloworld.html",
-        "key": "hello-world",
-        "location": "system.top.navigation.bar",
-        "name": {
-          "value": "Scrumptious"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@atlaskit/css-reset@2.0.0/dist/bundle.css"
+      media="all"
+    />
+    <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
+  </head>
+  <body onload="">
+    <section id="content" class="ac-content">
+      <h1>Visualized Scrum</h1>
+      <h2>Api Test</h2>
+      <hr />
+      <button onclick="getUserInfo()">Get User Info</button>
+      <button onclick="projectInfo()">Get All Projects</button>
+      <button onclick="projectInfo()" disabled>Get Active Projects</button>
+      <hr />
+      Jira Dialog: <button onclick="createIssueDialog()">Create Issue</button>
+      <hr />
+      Test Data:
+      <button onclick="createProject()">Generate Test Project</button>
+      <button onclick="">Generate Test Epic</button>
+      <button onclick="">Generate Test Story</button>
+      <button onclick="">Generate Test Task</button>
+      <button onclick="">Generate Test Data</button>
+    </section>
+  </body>
+  <script>
+    function getUserInfo() {
+      AP.request("/rest/api/2/myself")
+        .then(data => displayData(data))
+        .catch(e => alert(e.err));
+    }
+
+    function createIssueDialog() {
+      AP.jira.openCreateIssueDialog(
+        function(issues) {
+          alert(issues[0]["fields"]["summary"]);
+        },
+        {
+          pid: 10000,
+          issueType: 1,
+          fields: {
+            summary: "Hello World",
+            environment: "My environment",
+            priority: 2,
+            assignee: "tom",
+            reporter: "bob",
+            labels: ["Mylabel", "MyOtherLabel"],
+            description: "My first Issue",
+            duedate: "11/Oct/16",
+            fixVersions: 10001,
+            versions: 10000,
+            components: "My component",
+            timetracking_originalestimate: "2w",
+            timetracking_remainingestimate: "3d",
+            worklog_activate: true,
+            worklog_timeLogged: "2"
+          }
         }
-      }
-    ]
-  }
-}
+      );
+    }
+
+    function projectInfo() {
+      AP.require("request", function(request) {
+        request({
+          url: "/rest/api/latest/project",
+          success: function(response) {
+            // convert the string response to JSON
+            response = JSON.parse(response);
+
+            // dump out the response to the console
+            displayData(response);
+          },
+          error: function() {
+            console.log(arguments);
+          }
+        });
+      });
+    }
+
+    function createProject() {
+      AP.require("request", function(request) {
+        request({
+          url: "/rest/api/latest/project",
+          type: "POST",
+          data: JSON.stringify({
+            key: "EX",
+            name: "Example",
+            projectTypeKey: "business",
+            projectTemplateKey:
+              "com.atlassian.jira-core-project-templates:jira-core-simplified-project-management",
+            description: "Example Project description",
+            leadAccountId: "bd429c95-e27b-4423-a0bd-421cf3d69129",
+            url: "http://atlassian.com",
+            assigneeType: "PROJECT_LEAD",
+            avatarId: 10200,
+            issueSecurityScheme: 10001,
+            permissionScheme: 10011,
+            notificationScheme: 10021,
+            categoryId: 10120
+          }),
+          success: function(response) {
+            // convert the string response to JSON
+            response = JSON.parse(response);
+
+            // dump out the response to the console
+            displayData(response);
+          },
+          error: function() {
+            console.log(arguments);
+          }
+        });
+      });
+    }
+
+    function displayData(data) {
+      //alert("Data Fetched");
+      console.log(data);
+    }
+  </script>
+</html>
