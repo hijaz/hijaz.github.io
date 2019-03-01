@@ -12,7 +12,8 @@
   },
   "scopes": [
     "read",
-    "write"
+    "write",
+    "PROJECT_ADMIN"
   ],
   "apiVersion": 1,
   "modules": {
