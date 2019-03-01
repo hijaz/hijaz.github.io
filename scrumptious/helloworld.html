@@ -86,6 +86,7 @@
       AP.request({
         url: "/rest/api/latest/project",
         type: "POST",
+        contentType: "application/xml",
         data: JSON.stringify({
           key: "EX",
           name: "Example",
