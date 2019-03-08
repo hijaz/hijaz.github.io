@@ -4,11 +4,11 @@
   "description": "To test React/Redux app",
   "vendor": {
     "name": "testinger dev",
-    "url": "www.example.com"
+    "url": "https://www.hassanijaz.com/jiraverse/build"
   },
-  "baseUrl": "https://example.com/",
+  "baseUrl": "https://www.hassanijaz.com/jiraverse/build",
   "links": {
-    "config": "https://example.com//atlassian-connect.json"
+    "config": "https://www.hassanijaz.com/jiraverse/build/atlassian-connect.json"
   },
   "authentication": {
     "type": "none"
