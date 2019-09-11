@@ -2,6 +2,8 @@
 <script src="fuse.min.js"></script>
 <script>
   var options = {
+    shouldSort: true,
+  threshold: 0.8,
   keys: ['name']
 };
 var fuse = new Fuse(data, options)
