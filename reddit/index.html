@@ -3,7 +3,6 @@
 <script>
   var options = {
     shouldSort: true,
-  threshold: 0.8,
   keys: ['name']
 };
 var fuse = new Fuse(data, options)
@@ -22,7 +21,7 @@ function lookup() {
     document.getElementById("res").innerHTML='Loading...'
   const val = document.getElementById("search").value;
   const res = fuse.search(val);
-  document.getElementById("res").innerHTML = '<ul>'+res.map(r=>'<li>'+r.name+'</li>')+'</ul>';
+  document.getElementById("res").innerHTML = '<ul>'+res.slice(0, 100).map(r=>'<li>'+r.name+'</li>')+'</ul>';
   }
 }
 </script>
