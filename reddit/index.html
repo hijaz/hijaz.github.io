@@ -17,11 +17,13 @@ Reddit Search
 <script>
 function lookup() {
   if(event.key === 'Enter') {
-  debugger;
-    document.getElementById("res").innerHTML='Loading...'
+        document.getElementById("res").innerHTML='Loading...'
+
+    setTimeout(()=>{
   const val = document.getElementById("search").value;
   const res = fuse.search(val);
   document.getElementById("res").innerHTML = '<ul>'+res.slice(0, 5).map(r=>'<li><a href="http://reddit.com/r/'+r.name+'">'+r.name+'</li>').join('')+'</ul>';
+      },0)
   }
 }
 </script>
