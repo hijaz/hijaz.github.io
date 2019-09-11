@@ -17,9 +17,12 @@ Reddit Search
 
 <script>
 function lookup() {
+  if(event.key === 'Enter') {
   debugger;
+    document.getElementById("res").innerHTML='Loading...'
   const val = document.getElementById("search").value;
   const res = fuse.search(val);
   document.getElementById("res").innerHTML = '<ul>'+res.map(r=>'<li>'+r.name+'</li>')+'</ul>';
+  }
 }
 </script>
