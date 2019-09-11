@@ -21,7 +21,7 @@ function lookup() {
     document.getElementById("res").innerHTML='Loading...'
   const val = document.getElementById("search").value;
   const res = fuse.search(val);
-  document.getElementById("res").innerHTML = '<ul>'+res.slice(0, 100).map(r=>'<li>'+r.name+'</li>')+'</ul>';
+  document.getElementById("res").innerHTML = '<ul>'+res.slice(0, 5).map(r=>'<li><a href="reddit.com/r/'+r.name+'">'+r.name+'</li>')+'</ul>';
   }
 }
 </script>
